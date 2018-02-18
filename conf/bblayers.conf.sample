@@ -6,15 +6,15 @@ BBPATH = "${TOPDIR}"
 BBFILES ?= ""
 
 BBLAYERS ?= " \
-    ${HOME}/${YOCTO_ROOT_DIR}/${YOCTO_SRC_DIR}/meta \
-    ${HOME}/${YOCTO_ROOT_DIR}/${YOCTO_SRC_DIR}/meta-poky \
-    ${HOME}/${YOCTO_ROOT_DIR}/${YOCTO_SRC_DIR}/meta-openembedded/meta-oe \
-    ${HOME}/${YOCTO_ROOT_DIR}/${YOCTO_SRC_DIR}/meta-openembedded/meta-multimedia \
-    ${HOME}/${YOCTO_ROOT_DIR}/${YOCTO_SRC_DIR}/meta-openembedded/meta-networking \
-    ${HOME}/${YOCTO_ROOT_DIR}/${YOCTO_SRC_DIR}/meta-openembedded/meta-perl \
-    ${HOME}/${YOCTO_ROOT_DIR}/${YOCTO_SRC_DIR}/meta-openembedded/meta-python \
-    ${HOME}/${YOCTO_ROOT_DIR}/${YOCTO_SRC_DIR}/meta-qt5 \
-    ${HOME}/${YOCTO_ROOT_DIR}/${YOCTO_SRC_DIR}/meta-raspberrypi \
-    ${HOME}/${YOCTO_ROOT_DIR}/${YOCTO_SRC_DIR}/meta-security \
-    ${HOME}/${YOCTO_BUILD_DIR)/meta-rpi \
+    ${HOME}/yocto/poky-rocko/meta \
+    ${HOME}/yocto/poky-rocko/meta-poky \
+    ${HOME}/yocto/poky-rocko/meta-openembedded/meta-oe \
+    ${HOME}/yocto/poky-rocko/meta-openembedded/meta-multimedia \
+    ${HOME}/yocto/poky-rocko/meta-openembedded/meta-networking \
+    ${HOME}/yocto/poky-rocko/meta-openembedded/meta-perl \
+    ${HOME}/yocto/poky-rocko/meta-openembedded/meta-python \
+    ${HOME}/yocto/poky-rocko/meta-qt5 \
+    ${HOME}/yocto/poky-rocko/meta-raspberrypi \
+    ${HOME}/yocto/poky-rocko/meta-security \
+    ${HOME}/rpi/meta-rpi \
 "
