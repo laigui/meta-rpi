@@ -247,7 +247,7 @@ CONF_VERSION = "1"
 #
 INHERIT += "extrausers"
 EXTRA_USERS_PARAMS = " useradd -P raspberry pi; \
-                       usermod -P jumpboxtek root; \
+                       usermod -P jumpnowtek root; \
                        usermod -a -G sudo pi;"
 PATCHRESOLVE = "noop"
 RM_OLD_IMAGE = "1"
