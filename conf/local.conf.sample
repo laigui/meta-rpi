@@ -246,7 +246,9 @@ CONF_VERSION = "1"
 # Raspberrypi Configuration
 #
 INHERIT += "extrausers"
-EXTRA_USERS_PARAMS = "usermod -P raspberry pi; "
+EXTRA_USERS_PARAMS = " useradd -P raspberry pi; \
+                       usermod -P jumpboxtek root; \
+                       usermod -a -G sudo pi;"
 PATCHRESOLVE = "noop"
 RM_OLD_IMAGE = "1"
 INHERIT += "rm_work"
