@@ -120,7 +120,7 @@ PACKAGE_CLASSES ?= "package_deb"
 # you can build the SDK packages for architectures other than the machine you are
 # running the build on (i.e. building i686 packages on an x86_64 host).
 # Supported values are i686 and x86_64
-#SDKMACHINE ?= "i686"
+SDKMACHINE ?= "x86_64"
 
 #
 # Extra image configuration defaults
@@ -260,3 +260,11 @@ PREFERRED_PROVIDER_udev = "eudev"
 VIRTUAL-RUNTIME_init_manager = "sysvinit"
 MACHINE_FEATURES_remove = "apm"
 IMAGE_INSTALL_append += " apt"
+IMAGE_FSTYPES = "tar.xz"
+# Choices are Image or zImage if NOT using u-boot (no u-boot is the default)	
+#
+# Choices are uImage or zImage if using u-boot, though if you choose zImage	# Additional image features
+# with u-boot you will also have to change the boot script boot command	
+#
+KERNEL_IMAGETYPE = "zImage"
+ 
