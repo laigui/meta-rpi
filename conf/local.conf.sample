@@ -246,7 +246,7 @@ CONF_VERSION = "1"
 # Raspberrypi Configuration
 #
 INHERIT += "extrausers"
-EXTRA_USERS_PARAMS = "usermod -P jumpnowtek root; "
+EXTRA_USERS_PARAMS = "usermod -P raspberry pi; "
 PATCHRESOLVE = "noop"
 RM_OLD_IMAGE = "1"
 INHERIT += "rm_work"
@@ -259,7 +259,7 @@ PREFERRED_PROVIDER_jpeg-native = "libjpeg-turbo-native"
 PREFERRED_PROVIDER_udev = "eudev"
 VIRTUAL-RUNTIME_init_manager = "sysvinit"
 MACHINE_FEATURES_remove = "apm"
-IMAGE_INSTALL_append += " apt"
+IMAGE_INSTALL_append += " apt gnupg sudo python-modules"
 IMAGE_FSTYPES = "tar.xz"
 # Choices are Image or zImage if NOT using u-boot (no u-boot is the default)	
 #
